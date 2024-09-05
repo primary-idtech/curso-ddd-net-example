@@ -52,6 +52,7 @@ docker start CleanArchitectureAPI
 Al no utilizar docker deberemos crear la base de datos y ajustar las configuraciones para que la API pueda acceder a la misma.
 
 __Crear la base de datos__
+
 Ejecutar el script "db-init.sql" que se encuentra en el raiz, para crear la base de datos en conjunto con el usuario de login. 
 
 __Ajustar la configuración__

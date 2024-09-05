@@ -21,10 +21,15 @@ namespace CleanArchitecture.Presentation.Controllers
         private readonly IMediator mediator = mediator;
 
         /// <summary>
-        /// Returns paginated Portfolios results
+        /// Find All
         /// </summary>
         /// <remarks>
-        /// 
+        /// Returns paginated Portfolios results. 
+        /// The results are sorted by the field and direction specified in the sort parameter. 
+        /// The offset parameter specifies the starting point to return results. 
+        /// The limit parameter specifies the maximum number of results to return. 
+        /// The default values are offset=0 and limit=200.
+        ///
         /// Sample request:
         ///
         ///     GET /api/portfolios/findAll?sort=id,desc&amp;offset=0&amp;limit=200
@@ -54,11 +59,13 @@ namespace CleanArchitecture.Presentation.Controllers
         }
 
         /// <summary>
-        /// Returns one Portfolio according to ID
+        /// Get by ID
         /// </summary>
         /// <param name="id" example="1">Identifier from Portfolio</param>
         /// <returns>Information result for one Portfolio</returns>
         /// <remarks>
+        /// Returns one Portfolio according to ID.
+        /// 
         /// Sample request:
         ///
         ///     GET /api/portfolios/1
@@ -83,10 +90,11 @@ namespace CleanArchitecture.Presentation.Controllers
         }
 
         /// <summary>
-        /// Create a Portfolio
+        /// Create Portfolio
         /// </summary>
         /// <returns>Information resulting from the creation portfolio</returns>
         /// <remarks>
+        /// Create a new Portfolio.
         /// 
         /// Sample request:
         ///
@@ -116,6 +124,7 @@ namespace CleanArchitecture.Presentation.Controllers
         /// Delete Portfolio 
         /// </summary>
         /// <remarks>
+        /// Delete a Portfolio by ID.
         ///
         /// Sample request: 
         /// 
@@ -142,6 +151,7 @@ namespace CleanArchitecture.Presentation.Controllers
         /// Update Portfolio
         /// </summary>
         /// <remarks>
+        /// Update a Portfolio by ID.
         ///
         /// Sample request: 
         /// 
