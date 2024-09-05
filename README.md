@@ -51,6 +51,9 @@ docker start CleanArchitectureAPI
 #### Sin Docker:
 Al no utilizar docker deberemos crear la base de datos y ajustar las configuraciones para que la API pueda acceder a la misma.
 
+__Crear la base de datos__
+Ejecutar el script "db-init.sql" que se encuentra en el raiz, para crear la base de datos en conjunto con el usuario de login. 
+
 __Ajustar la configuración__
 
 CleanArchitecture.App :arrow_right: Properties :arrow_right: launchSettings.json
@@ -72,7 +75,7 @@ A disfrutar!
 
 ### :large_blue_diamond: DDD
 
-El objetivo principal de aplicar DDD o Domain Driven Design en inglés, es poder aislar el código que pertenece al dominio de los detalles técnicos de implementación y así centrarnos en la complejidad del negocio.
+El objetivo principal de aplicar DDD o Domain Driven Design en inglés, es poder aislar el código que pertenece al dominio, de los detalles técnicos de implementación y así centrarnos en la complejidad del negocio.
 
 Recomendamos completar el curso DDD [Estratégico](https://primary-lumina.talentlms.com/learner/courseinfo/id:285) y [Táctico](https://primary-lumina.talentlms.com/learner/courseinfo/id:289) para mayor comprensión.
 
